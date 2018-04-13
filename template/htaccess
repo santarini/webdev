@@ -1,0 +1,4 @@
+#Force www.
+RewriteEngine On
+        RewriteCond %{HTTP_HOST} !^www.makoasystems.com$ [NC]
+        RewriteRule ^(.*)$ http://www.makoasystems.com/$1 [L,R=301]
